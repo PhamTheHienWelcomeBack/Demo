@@ -1,0 +1,224 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1440px;
+    min-width: 320px;
+    width: 100%;
+    height: 100vh;
+    margin: -20px 10px 0px 0px;
+    background: rgb(230, 230, 230);
+}
+.register {
+    position: relative;
+    max-width: 100%;
+    min-height: 480px;
+    width: 760px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+    background: rgb(230, 230, 230);
+}
+.register .container {
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    transition: all 0.6s ease-in-out;   
+}
+.register .container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 50px;
+    background: rgb(255, 255, 255);
+}
+.register .container form h1 {
+    font-size: 35px;
+}
+.register .container form .form-social {
+    margin: 16px 0px;
+}
+.register .container form .form-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0px 5px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.6s;
+}
+.register .container form .form-social a:hover {
+    transition: 0.3s;
+    background: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.register .container form span {
+    margin: 0px 0px 10px 0px;
+    font-size: 16px;
+}
+.register .container form input {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(230, 230, 230);
+}
+.register .container form a {
+    margin: 5px 0px 0px 150px;
+    text-decoration: none;
+    color: rgb(180, 0, 0);
+}
+.register .container form a:hover {
+    text-decoration: underline;
+    color: rgb(230, 0, 0);
+}
+.register .container form button {
+    margin: 10px 0px;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background: linear-gradient(to right, #9ecac1, #966cff);
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: transform 0.2s ease-in;
+}
+.register .container form button:active {
+    transform: scale(0.9);
+}
+.register .container form button.ghost {
+    border: rgb(255, 255, 255);
+    background: transparent;
+}
+.register .sign-in {
+    width: 50%;
+    left: 0px;
+    z-index: 2;
+}
+.register.active .sign-in {
+    transform: translateX(100%);
+}
+.register .sign-up {
+    width: 50%;
+    left: 0px;
+    z-index: 1;
+    opacity: 0;
+}
+.register.active .sign-up {
+    z-index: 5;
+    opacity: 1;
+    transform: translateX(100%);
+    animation: ShowForm 0.6s;
+}
+@keyframes ShowForm {
+    0%, 49.99% {
+        z-index: 1;
+        opacity: 0;
+    }
+    50%, 100% {
+        z-index: 5;
+        opacity: 1;
+    }
+}
+.register .wrapper {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    left: 50%;
+    overflow: hidden;
+    z-index: 100;
+    transition: transform 0.6s ease-in-out;
+}
+.register.active .wrapper {
+    transform: translateX(-100%);
+}
+.register .wrapper .overlay {
+    position: relative;
+    width: 200%;
+    height: 100%;
+    left: -100%;
+    background: url(https://gamek.mediacdn.vn/133514250583805952/2021/5/13/-16209251245662016280140.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+.register.active .wrapper .overlay {
+    transform: translateX(50%);
+}
+.register .wrapper .overlay .panel {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    padding: 0px 40px;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+.register .wrapper .overlay .panel.left {
+    transform: translateX(-20%);
+}
+.register.active .wrapper .overlay .panel.left {
+    transform: translateX(0);
+}
+.register .wrapper .overlay .panel.right {
+    right: 0px;
+    transform: translateX(0);
+}
+.register.active .wrapper .overlay .panel.right {
+    transform: translateX(20%);
+}
+.register .wrapper .overlay .panel h1 {
+    margin: 0px;
+    background: linear-gradient(to right, #9ecac1, #966cff);
+    color: transparent;
+    font-size: 34px;
+    -webkit-background-clip: text;
+}
+.register .wrapper .overlay .panel p {
+    margin: 10px 0px 20px;
+    color: rgb(200, 200, 200);
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.register .wrapper .overlay .panel button {
+    padding: 13px 40px;
+    border-radius: 30px;
+    outline: none;
+    background: transparent;
+    box-shadow: 0px 0px 10px 5px rgb(200, 200, 200);
+    color: rgb(200, 200, 200);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: transform 0.2s ease-in;
+}
+.register .wrapper .overlay .panel button:active {
+    transform: scale(0.9);
+}
