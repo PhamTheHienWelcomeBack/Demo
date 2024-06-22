@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="part1">
+        <div class="logo">
+            <a href="#">Vũ Trụ Liên Minh</a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Khu vực</a></li>
+                <li><a href="#">Vũ trụ</a></li>
+            </ul>
+            <div class="search">
+                <form action="#">
+                    <button id=""><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" id="" placeholder="Tìm kiếm">
+                    <button type="reset"><i class="fa-solid fa-xmark"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile-btn">
+                <div class="account">
+                    <button id="account-button">
+                        <i class="fa-solid fa-user"></i>
+                        <i id="caret-icon" class="fa-solid fa-caret-down"></i>
+                    </button>
+                </div>
+                <div id="form-feature" class="form-feature">
+                    <div class="wrapper">
+                        <div class="icon">
+                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="profile-page">
+                            <a href="#">Trang cá nhân</a>
+                            <a href="#">Giỏ hàng</a>
+                        </div>
+                    </div>
+                    <div class="log-out">
+                        <button id="">Đăng xuất</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="part2">
+        <div class="menu-bar">
+            <div class="heading">
+                <h1>Lọc sản phẩm</h1>
+            </div>
+            <form action="#">
+                <div class="filter-form gender">
+                    <div class="title">
+                        <h2>Giới tính tướng</h2>
+                    </div>
+                    <div class="check-form male">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Tướng Nam</label>
+                    </div>
+                    <div class="check-form female">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Tướng Nữ</label>
+                    </div>
+                </div>
+                <div class="filter-form normal-or-skin">
+                    <div class="title">
+                        <h2>Thường hoặc trang phục</h2>
+                    </div>
+                    <div class="check-form normal">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Bình thường</label>
+                    </div>
+                    <div class="check-form skin">
+                        <input type="checkbox" name="" id="">
+                        <label for=""> Trang phục</label>
+                    </div>
+                </div>
+                <div class="filter-form area">
+                    <div class="title">
+                        <h2>Khu vực</h2>
+                    </div>
+                    <select>
+                        <option value="">----Trống----</option>
+                        <option value="">Bilgewater</option>
+                        <option value="">Demacia</option>
+                        <option value="">Fleljord</option>
+                        <option value="">Hư không</option>
+                        <option value="">Lonia</option>
+                        <option value="">Ixtal</option>
+                        <option value="">Noxus</option>
+                        <option value="">Piltover</option>
+                        <option value="">Quần đảo bóng đêm</option>
+                        <option value="">Surima</option>
+                        <option value="">Targon</option>
+                        <option value="">Thành phố Bandle</option>
+                        <option value="">Zaun</option>
+                    </select>
+                </div>
+                <div class="filter-form price">
+                    <div class="title">
+                        <h2>Giá tiền</h2>
+                    </div>
+                    <div class="check-form high-price">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Từ cao xuống thấp</label>
+                    </div>
+                    <div class="check-form low-price">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Từ thấp lên cao</label>
+                    </div>
+                </div>
+                <div class="filter-submit">
+                    <button id="">Lọc</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-product">
+            <div class="container">
+                <div class="product">
+                    <div class="wrapper">
+                        <img src="https://via.placeholder.com/220x300" alt="">
+                        <div class="show-more">
+                            <button id="">Xem thêm</button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <h3>Tên của sản phẩm</h3>
+                            <p>Mô tả của sản phẩm sơ lược</p>
+                        </div>
+                        <div class="price">
+                            <strong>200.000đ</strong>
+                            <span>250.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wrapper">
+                        <img src="https://via.placeholder.com/220x300" alt="">
+                        <div class="show-more">
+                            <button id="">Xem thêm</button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <h3>Tên của sản phẩm</h3>
+                            <p>Mô tả của sản phẩm sơ lược</p>
+                        </div>
+                        <div class="price">
+                            <strong>200.000đ</strong>
+                            <span>250.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wrapper">
+                        <img src="https://via.placeholder.com/220x300" alt="">
+                        <div class="show-more">
+                            <button id="">Xem thêm</button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <h3>Tên của sản phẩm</h3>
+                            <p>Mô tả của sản phẩm sơ lược</p>
+                        </div>
+                        <div class="price">
+                            <strong>200.000đ</strong>
+                            <span>250.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wrapper">
+                        <img src="https://via.placeholder.com/220x300" alt="">
+                        <div class="show-more">
+                            <button id="">Xem thêm</button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <h3>Tên của sản phẩm</h3>
+                            <p>Mô tả của sản phẩm sơ lược</p>
+                        </div>
+                        <div class="price">
+                            <strong>200.000đ</strong>
+                            <span>250.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wrapper">
+                        <img src="https://via.placeholder.com/220x300" alt="">
+                        <div class="show-more">
+                            <button id="">Xem thêm</button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <h3>Tên của sản phẩm</h3>
+                            <p>Mô tả của sản phẩm sơ lược</p>
+                        </div>
+                        <div class="price">
+                            <strong>200.000đ</strong>
+                            <span>250.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wrapper">
+                        <img src="https://via.placeholder.com/220x300" alt="">
+                        <div class="show-more">
+                            <button id="">Xem thêm</button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <h3>Tên của sản phẩm</h3>
+                            <p>Mô tả của sản phẩm sơ lược</p>
+                        </div>
+                        <div class="price">
+                            <strong>200.000đ</strong>
+                            <span>250.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wrapper">
+                        <img src="https://via.placeholder.com/220x300" alt="">
+                        <div class="show-more">
+                            <button id="">Xem thêm</button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <h3>Tên của sản phẩm</h3>
+                            <p>Mô tả của sản phẩm sơ lược</p>
+                        </div>
+                        <div class="price">
+                            <strong>200.000đ</strong>
+                            <span>250.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wrapper">
+                        <img src="https://via.placeholder.com/220x300" alt="">
+                        <div class="show-more">
+                            <button id="">Xem thêm</button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <h3>Tên của sản phẩm</h3>
+                            <p>Mô tả của sản phẩm sơ lược</p>
+                        </div>
+                        <div class="price">
+                            <strong>200.000đ</strong>
+                            <span>250.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wrapper">
+                        <img src="https://via.placeholder.com/220x300" alt="">
+                        <div class="show-more">
+                            <button id="">Xem thêm</button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <h3>Tên của sản phẩm</h3>
+                            <p>Mô tả của sản phẩm sơ lược</p>
+                        </div>
+                        <div class="price">
+                            <strong>200.000đ</strong>
+                            <span>250.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wrapper">
+                        <img src="https://via.placeholder.com/220x300" alt="">
+                        <div class="show-more">
+                            <button id="">Xem thêm</button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <h3>Tên của sản phẩm</h3>
+                            <p>Mô tả của sản phẩm sơ lược</p>
+                        </div>
+                        <div class="price">
+                            <strong>200.000đ</strong>
+                            <span>250.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wrapper">
+                        <img src="https://via.placeholder.com/220x300" alt="">
+                        <div class="show-more">
+                            <button id="">Xem thêm</button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <h3>Tên của sản phẩm</h3>
+                            <p>Mô tả của sản phẩm sơ lược</p>
+                        </div>
+                        <div class="price">
+                            <strong>200.000đ</strong>
+                            <span>250.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wrapper">
+                        <img src="https://via.placeholder.com/220x300" alt="">
+                        <div class="show-more">
+                            <button id="">Xem thêm</button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <h3>Tên của sản phẩm</h3>
+                            <p>Mô tả của sản phẩm sơ lược</p>
+                        </div>
+                        <div class="price">
+                            <strong>200.000đ</strong>
+                            <span>250.000đ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="part3">
+        <div class="container">
+            <div class="heading">
+                <h1>Sản phẩm hot nhất</h1>
+            </div>
+            <div class="wrapper">
+                <div class="card">
+                    <div class="image">
+                        <img src="https://via.placeholder.com/260x350" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <strong>Tên tướng</strong>
+                            <span>Biệt danh tướng</span>
+                        </div>
+                        <div class="introduce">
+                            <div class="buy">
+                                <button id="">Thêm</button>
+                            </div>
+                            <div class="price">
+                                <strong>1000</strong>
+                                <span>1200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="https://via.placeholder.com/260x350" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <strong>Tên tướng</strong>
+                            <span>Biệt danh tướng</span>
+                        </div>
+                        <div class="introduce">
+                            <div class="buy">
+                                <button id="">Thêm</button>
+                            </div>
+                            <div class="price">
+                                <strong>1000</strong>
+                                <span>1200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="https://via.placeholder.com/260x350" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <strong>Tên tướng</strong>
+                            <span>Biệt danh tướng</span>
+                        </div>
+                        <div class="introduce">
+                            <div class="buy">
+                                <button id="">Thêm</button>
+                            </div>
+                            <div class="price">
+                                <strong>1000</strong>
+                                <span>1200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="https://via.placeholder.com/260x350" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <strong>Tên tướng</strong>
+                            <span>Biệt danh tướng</span>
+                        </div>
+                        <div class="introduce">
+                            <div class="buy">
+                                <button id="">Thêm</button>
+                            </div>
+                            <div class="price">
+                                <strong>1000</strong>
+                                <span>1200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="card">
+                    <div class="image">
+                        <img src="https://via.placeholder.com/260x350" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <strong>Tên tướng</strong>
+                            <span>Biệt danh tướng</span>
+                        </div>
+                        <div class="introduce">
+                            <div class="buy">
+                                <button id="">Thêm</button>
+                            </div>
+                            <div class="price">
+                                <strong>1000</strong>
+                                <span>1200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="https://via.placeholder.com/260x350" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <strong>Tên tướng</strong>
+                            <span>Biệt danh tướng</span>
+                        </div>
+                        <div class="introduce">
+                            <div class="buy">
+                                <button id="">Thêm</button>
+                            </div>
+                            <div class="price">
+                                <strong>1000</strong>
+                                <span>1200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="https://via.placeholder.com/260x350" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <strong>Tên tướng</strong>
+                            <span>Biệt danh tướng</span>
+                        </div>
+                        <div class="introduce">
+                            <div class="buy">
+                                <button id="">Thêm</button>
+                            </div>
+                            <div class="price">
+                                <strong>1000</strong>
+                                <span>1200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="https://via.placeholder.com/260x350" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="title">
+                            <strong>Tên tướng</strong>
+                            <span>Biệt danh tướng</span>
+                        </div>
+                        <div class="introduce">
+                            <div class="buy">
+                                <button id="">Thêm</button>
+                            </div>
+                            <div class="price">
+                                <strong>1000</strong>
+                                <span>1200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-us">
+        <div class="logo">
+            <a href="#">Vũ Trụ Liên Minh</a>
+        </div>
+        <div class="reminder">
+            <p>
+                Mua những vật phẩm thẻ bài tướng Liên Minh Huyền Thoại làm vật trưng bày
+            </p>
+        </div>
+        <div class="contact">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+        <div class="rule">
+            <a href="">Điều khoản</a>
+            <a href="">Bản quyền</a>
+            <a href="">Giấy phép kinh doan</a>
+        </div>
+    </div>
+    <script src="./product.js"></script>
+</body>
+</html>
