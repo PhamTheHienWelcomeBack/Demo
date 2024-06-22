@@ -1,0 +1,570 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1440px;
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+}
+.part1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.part1 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 280px;
+    min-width: 260px;
+    width: 100%;
+    height: 100%;
+}
+.part1 .logo a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-weight: bold;
+}
+.part1 .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    min-width: 800px;
+    width: 100%;
+    height: 100%;
+}
+.part1 .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: 100%;
+}
+.part1 .menu ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+.part1 .menu ul li a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+}
+.part1 .menu ul li a::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: -5px;
+    border-radius: 50%;
+    content: "";
+    background: rgb(0, 0, 0);
+    transform: scale(0);
+    transition: transform 0.4s;
+}
+.part1 .menu ul li a:hover::after {
+    transform: scale(1);
+    transition: transform 0.4s;
+}
+.part1 .menu .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 100%;
+}
+.part1 .menu .search form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 45px;
+}
+.part1 .menu .search form button {
+    position: absolute;
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+.part1 .menu .search form input {
+    width: 100%;
+    height: 100%;
+    padding: 0px 55px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(100, 100, 100, 0.6);
+    font-size: 15px;
+}
+.part1 .menu .search form input::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+.part1 .menu .search form button:nth-child(1) {
+    width: 45px;
+    height: 100%;
+    left: 0;
+    border-radius: 10px 0px 0px 10px;
+    background: rgb(0, 0, 0, 0.4);
+}
+.part1 .menu .search form button:nth-child(3) {
+    width: 45px;
+    height: 100%;
+    right: 0;
+}
+.part1 .profile {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.part1 .profile .profile-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 280px;
+    min-width: 260px;
+    width: 100%;
+    height: 100%;
+}
+.part1 .profile .profile-btn .sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 44px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background: none;
+}
+.part1 .profile .profile-btn .sign-in a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.part1 .profile .profile-btn .sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 44px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+}
+.part1 .profile .profile-btn .sign-up a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.part2 .container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 530px;
+}
+.part2 .container .wrapper {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 380px;
+}
+.part2 .container .wrapper img {
+    width: 100%;
+    height: 100%;
+}
+.part2 .container .wrapper .info {
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    height: 260px;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s;
+    pointer-events: none;
+}
+
+.part2 .container .wrapper img:hover + .info,
+.part2 .container .wrapper .info:hover {
+    opacity: 1;
+    transition: opacity 0.4s;
+    pointer-events: auto;
+}
+.part2 .container .wrapper .info strong {
+    font-size: 32px;
+}
+.part2 .container .wrapper .info p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.part2 .container .wrapper .info .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+.part2 .container .wrapper .info .more button {
+    width: 140px;
+    height: 45px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    outline: none;
+    background: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+.part2 .container .control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+.part2 .container .control .move {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+}
+.part2 .container .control .move button {
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 100%;
+    outline: none;
+    background: none;
+    font-size: 25px;
+}
+.part2 .container .control .list-introduce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+.part2 .container .control .list-introduce .round-mark-1 {
+    width: 12px;
+    height: 12px;
+    margin: 0px 6px;
+    border-radius: 30px;
+    background: rgb(0, 0, 0);
+}
+.part2 .container .control .list-introduce .round-mark-2,.round-mark-3,.round-mark-4 {
+    width: 12px;
+    height: 12px;
+    margin: 0px 6px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0);
+}
+.part3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.part3 .container {
+    width: 95%;
+}
+.part3 .container .heading {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+.part3 .container .heading h1 {
+    font-size: 35px;
+}
+.part3 .container .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 100%;
+    height: 550px;
+}
+.part3 .container .wrapper .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+}
+.part3 .container .wrapper .card .image {
+    width: 100%;
+    height: 400px;
+}
+.part3 .container .wrapper .card .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.part3 .container .wrapper .card .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 120px;
+    border-radius: 0px 0px 10px 10px;
+    background: rgb(100, 100, 100);
+}
+.part3 .container .wrapper .card .info .title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+}
+.part3 .container .wrapper .card .info .title strong {
+    font-size: 25px;
+}
+.part3 .container .wrapper .card .info .title span {
+    font-size: 17px;
+    font-weight: bold;
+}
+.part3 .container .wrapper .card .info .introduce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+}
+.part3 .container .wrapper .card .info .introduce .buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+}
+.part3 .container .wrapper .card .info .introduce .buy button {
+    width: 110px;
+    height: 34px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.part3 .container .wrapper .card .info .introduce .price {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 90px;
+    min-width: 80px;
+    width: 100%;
+    height: 100%;
+}
+.part3 .container .wrapper .card .info .introduce .price strong {
+    font-size: 19px;
+}
+.part3 .container .wrapper .card .info .introduce .price span {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+.part4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.part4 .container {
+    width: 95%;
+}
+.part4 .container .heading {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+.part4 .container .heading h1 {
+    font-size: 35px;
+}
+.part4 .container .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 40px;
+}
+.part4 .container .wrapper .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+}
+.part4 .container .wrapper .card .image {
+    width: 500px;
+    height: 320px;
+}
+.part4 .container .wrapper .card .image img {
+    width: 100%;
+    height: 100%;
+}
+.part4 .container .wrapper .card .info {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    width: 92%;
+    height: 160px;
+    bottom: 0px;
+}
+.part4 .container .wrapper .card .info .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+}
+.part4 .container .wrapper .card .info .title h1 {
+    font-size: 30px;
+}
+.part4 .container .wrapper .card .info .product-type {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 24px;
+}
+.part4 .container .wrapper .card .info .product-type span {
+    margin-left: 5px;
+}
+.part4 .container .wrapper .card .info .price {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 24px;
+}
+.part4 .container .wrapper .card .info .price span {
+    margin-left: 5px;
+}
+.part4 .container .wrapper .card .info .buy {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 50px;
+}
+.part4 .container .wrapper .card .info .buy button {
+    width: 110px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.part4 .container .wrapper .card .info .buy button:nth-child(2) {
+    border: 1px solid rgb(0, 0, 0);
+    background: none;
+    color: rgb(0, 0, 0);
+}
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+    background: rgb(110, 110, 110);
+}
+.about-us .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 40px;
+}
+.about-us .logo a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+}
+.about-us .reminder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 40px;
+}
+.about-us .reminder p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.about-us .contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 220px;
+    height: 60px;
+}
+.about-us .contact a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 42px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    background: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.about-us .rule {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+}
+.about-us .rule a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
